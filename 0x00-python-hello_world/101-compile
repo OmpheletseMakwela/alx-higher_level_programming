@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "Error: Please provide the Python script filename as an argument."
+    exit 1
+fi
+
+PYFILE="$1"
+
+filename=$(basename -- "$PYFILE")
+extension="${filename##*.}"
+filename="${filename%.*}"
+
+python3 -m compileall "$PYFILE"
+
+if [ $? -eq 0 ]; then
+    compiled_file="${filename}c"
+    if [ -f "$compiled_file" ]; then
+        echo "$compiled_file already exists."
+    else
+        mv "__pycache__/$filename"*".pyc" "$compiled_file"
+    fi
+    rm -rf "__pycache__"
+else
+    echo "Error: Compilation failed for $PYFILE"
+    exit 1
+fi
