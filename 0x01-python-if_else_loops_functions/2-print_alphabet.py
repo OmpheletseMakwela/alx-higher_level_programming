@@ -2,4 +2,6 @@
 import sys
 
 alphabet = ''.join(chr(i) for i in range(97, 123))
-print(f"{alphabet}\n", end='')
+output_string = "{}\n".format(alphabet)
+
+print(output_string, end='')
