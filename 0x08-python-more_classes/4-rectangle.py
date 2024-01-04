@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """A rectangle class is created."""
 
 
@@ -52,8 +52,8 @@ class Rectangle:
         """Return a string representation of the rectangle using '#'."""
         if self.width == 0 or self.height == 0:
             return ""
-        return "\n".join("#" * self.width for _ in range(self.height))
+        return '\n'.join(['#' * self.width] * self.height)
 
     def __repr__(self):
         """Return a string representation."""
-        return f"Rectangle({self.width}, {self.height})"
+        return f'Rectangle({self.width}, {self.height})'
