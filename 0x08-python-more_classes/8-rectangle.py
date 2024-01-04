@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""A rectangle class is created."""
+
 
 class Rectangle:
     number_of_instances = 0
