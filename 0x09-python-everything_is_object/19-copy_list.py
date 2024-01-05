@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-def copy_list(l):
-    return l[:]
+"""A function is defined"""
+
+
+def copy_list(a):
+    return a[:]
