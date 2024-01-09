@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""import a module."""
 import json
 """A function is defined"""
 
