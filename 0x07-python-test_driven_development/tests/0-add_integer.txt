@@ -1,0 +1,30 @@
+"tests/0-add_integer.txt": test cases
+>>> from 0-add_integer import add_integer
+
+# Test case 1: Testing addition of two integers
+>>> add_integer(1, 2)
+3
+
+# Test case 2: Testing addition of positive and negative integers
+>>> add_integer(100, -2)
+98
+
+# Test case 3: Testing addition with one argument
+>>> add_integer(2)
+100
+
+# Test case 4: Testing addition of a float and an integer
+>>> add_integer(100.3, -2)
+98
+
+# Test case 5: Testing addition with a string argument (should raise TypeError)
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer or b must be an integer
+
+# Test case 6: Testing addition with None (should raise TypeError)
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer or b must be an integer
