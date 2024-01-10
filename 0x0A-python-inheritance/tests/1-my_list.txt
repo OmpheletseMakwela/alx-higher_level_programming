@@ -1,0 +1,6 @@
+Test Case: Print Sorted Method
+
+Given a MyList instance containing [1, 4, 2, 3, 5]:
+When calling the print_sorted() method,
+The output should display [1, 2, 3, 4, 5] in ascending order.
+The original list should remain unchanged.
